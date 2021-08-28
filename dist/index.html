@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/sMap/favicon.ico"><title>vue-firebase-crud</title><link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css"><script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script><link href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css" rel="stylesheet"><link href="/sMap/css/chunk-2aa3bda7.485215e7.css" rel="prefetch"><link href="/sMap/css/chunk-5e94974a.4d9f074c.css" rel="prefetch"><link href="/sMap/js/chunk-2aa3bda7.090235d7.js" rel="prefetch"><link href="/sMap/js/chunk-5e94974a.ce76a5ba.js" rel="prefetch"><link href="/sMap/js/chunk-c5699452.42b9ef04.js" rel="prefetch"><link href="/sMap/css/app.f320694f.css" rel="preload" as="style"><link href="/sMap/js/app.9d637fdd.js" rel="preload" as="script"><link href="/sMap/js/chunk-vendors.797b63c7.js" rel="preload" as="script"><link href="/sMap/css/app.f320694f.css" rel="stylesheet"></head><body><div class="w3-cell-row"><div id="map"></div></div><noscript><strong>We're sorry but vue-firebase-crud doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/sMap/js/chunk-vendors.797b63c7.js"></script><script src="/sMap/js/app.9d637fdd.js"></script></body><script>L.mapbox.accessToken = 'pk.eyJ1Ijoiczk5MjEzMTYiLCJhIjoiY2tqbzJmd2x0MGl3bzJycHJ4YWZkNmNybiJ9.mhK4o-eCYqLs0gFsDjC-tQ';
+
+        var mapboxTiles = L.tileLayer('https://api.mapbox.com/styles/v1/s9921316/ckljcjp7l0sa217mnnn93u0qh/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
+               attribution: '© <a href="https://www.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+               tileSize: 512,
+               zoomOffset: -1
+        });
+
+
+        var popup = L.popup();
+        var map = L.map('map')
+          .addLayer(mapboxTiles)
+          .setView([22.78868, 120.29159], 10); 
+
+        // map.on('click', onMapClick)
+
+        // function onMapClick(e) {
+
+        //      var Lat =e.latlng.lat ;
+        //      var Lng =e.latlng.lng ;
+        //         popup.setLatLng(e.latlng)
+        //         .setContent("Here is [ " + Lat.toString() + "," + Lng.toString() + "]")
+        //         .openOn(map);
+
+        // }
+        // L.control.scale().addTo(map);</script><script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script></html>
